@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!--bootsrap css-->
+  <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!--fontawesom icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--css-->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--owl css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <!-- Navbar-Section-start -->
+  <header class="header_wrapper">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand logoback" href="index.html">
+          <img src="images/logo.svg" alt="logo" class="img-fluid" />
+        </a>
+
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
+          class="d-lg-none">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="40"
+            height="40" x="0" y="0" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512"
+            xml:space="preserve" class="">
+            <g>
+              <path
+                d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z"
+                fill="#000000" opacity="1" data-original="#000000" class=""></path>
+            </g>
+          </svg>
+        </a>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active btn-5 position-relative clr capital" aria-current="page"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-5 position-relative capital" href="about.html"><span>About</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle capital" href="#services" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-5 position-relative capital" href="#">
+                Gallary</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link btn-5 position-relative capital" href="testimonial.html">Testimonials</a>
+            </li>
+
+            <li class="nav-item">
+              <button type="button" class="btns capital" a href="#contactus">
+                Contact us
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navbar-Section-end -->
+
+  <!-- Mobile Nav -->
+  <div class="offcanvas offcanvas-end mobil_menu_wrapper d-lg-none d-block" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+        <img src="images/logo.svg" alt="logo" class="img-fluid">
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button accordion-button-2" type="button">
+            <a href="index.html">Home</a>
+          </button>
+        </h2>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button accordion-button-2" type="button">
+            <a href="about.html">ABOUT US</a>
+          </button>
+        </h2>
+
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button accordion-button-2" type="button">
+            <a href="service.html">SERVICES</a>
+          </button>
+        </h2>
+
+      </div>
+
+      <div class="accordion-item d-none">
+        <h2 class="accordion-header" id="flush-headingfour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+            SERVICES
+          </button>
+        </h2>
+        <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="col">
+              <a href="#" class="drop-link d-flex allign-items-center text-decoration-none text-dark">
+                <div class="icon">
+                  <img src="https://www.technogigz.com/assets/images/mobile-app.png" alt="" width="30">
+                </div>
+                <div class="drop_content">
+                  Mobile app Devlopment
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item d-none">
+        <h2 class="accordion-header" id="flush-headingfive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
+            Company
+          </button>
+        </h2>
+        <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="col">
+              <a href="#" class="drop-link d-flex allign-items-center text-decoration-none text-dark">
+                <div class="icon">
+                  <img src="https://www.technogigz.com/assets/images/mobile-app.png" alt="" width="30">
+                </div>
+                <div class="drop_content">
+                  Mobile app Devlopment
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item d-none">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button accordion-button-2" type="button">
+            <a href="#">Portfolio</a>
+          </button>
+        </h2>
+
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button accordion-button-2" type="button">
+            <a href="#">BLOG</a>
+          </button>
+        </h2>
+
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button accordion-button-2" type="button">
+            <a href="gallery.html">GALLERY</a>
+          </button>
+        </h2>
+
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button accordion-button-2 " type="button">
+            <a class="main-btn d-flex justify-content-center align-items-center" href="contact.html">Contact us
+
+            </a>
+          </button>
+        </h2>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Nav -->
+
+  <!--home-->
+  <section class="home">
+    <div class="main margins">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7 col-xl-7 col-md-6">
+            <div class="para">
+              <h4>Welcome to Services</h4>
+              <h1>
+                But the majority have suffered
+                <span class="clr">alteration in</span>
+              </h1>
+              <h5>
+                But the majority have suffered alteration in some form, by
+                injected humour, or
+              </h5>
+              <button class="btn1">
+                <p class="m-0">CONNECT WITH</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5 col-xl-5 col-md-6">
+            <div class="mainback">
+              <img src="images/mainpic.png" />
+              <div class="vectordiv"><img src="images/Vector.png"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--article-->
+  <!--end home-->
+  <section class="position-relative">
+    <div class="container">
+      <div class="article">
+        <div class="row">
+          <div class="col-lg-9 col-xl-9 col-md-6">
+            <h5>WELCOMETO CLEANQO SERVICES</h5>
+            <p class="m-0">
+              We have earned an impressive reputation for our expertise and
+              for delivering a fast, efficient service. Our reputation is
+              essential for our continual growth and success and we are proud
+              to be recognised by so many business sectors in Canberra and
+              surrounding areas.
+            </p>
+          </div>
+          <div class="col-lg-3 col-xl-3 col-md-6">
+            <img src="images/star.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+  </section>
+
+  <!--end article-->
+
+
+
+  <!--About us-->
+  <section class=" AboutUs margins">
+    <div class="container text-left">
+      <div class="row">
+        <div class="col-lg-6 col-xl-6 col-md-12">
+          <div class="about">
+            <h4 class="clr">ABOUT US</h4>
+          </div>
+          <h2>Quikly and easy to clean Your office and House</h2>
+          <p>
+            Cleanqo Services is a local family business with many years
+            experience in cleaning. Our team are fully trained professional’s
+            that provide the highest level of consistency and reliability.
+            Having achieved everything through our own efforts, we appreciate
+            what we have accomplished whilst maintaining the highest standards
+            and quality of work. As a family owned and operated business we
+            treat each client with respect paying attention to every specific
+            detail
+          </p>
+          <button class="btns2 capital">See More ></button>
+        </div>
+
+        <div class="col-lg-6 col-xl-6 col-md-12">
+          <img src="images/Group.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end about us-->
+
+  <!--Services-->
+  <section class="services">
+    <div class="container text-left mt-3">
+      <h4 class="clr margins">SERVICES</h4>
+      <h1>Clenqo services provides</h1>
+      <p>A wise range of Specialisted services</p>
+     
+      <div class="row gy-4 mt-5 ">
+        <div class="col-lg-3 col-xl-3 col-md-6">
+          <div class="service-section text-center ">
+            <div class="imgback"><img src="images/home.png" /></div>
+            <h3 class="clr mt-3">End of Lease Residential/office</h3>
+            <p>
+              Regular carpet cleaning keeps foreign particles to a minimum and
+              extends the life of your flooring investment.
+            </p>
+            <button class="service-btns">Learn More ></button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xl-3 col-md-6">
+          <div class="service-section text-center">
+            <div class="imgback"><img src="images/heart-center 1.png" /></div>
+            <h3 class="clr mt-3">Medical/Health Center</h3>
+            <p>
+              Regular carpet cleaning keeps foreign particles to a minimum and
+              extends the life of your flooring investment.
+            </p>
+            <button class="service-btns">Learn More ></button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-section text-center">
+            <div class="imgback"><img src="images/gym 1.png" /></div>
+            <h3 class="clr mt-3">Fitness & Leisure Centers</h3>
+            <p>
+              Regular carpet cleaning keeps foreign particles to a minimum and
+              extends the life of your flooring investment.
+            </p>
+            <button class="service-btns">Learn More ></button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="col service-section text-center" id="building">
+            <div class="imgback"><img src="images/building.png" /></div>
+            <h3 class="clr mt-3">Office and Commercial</h3>
+            <p>
+              Regular carpet cleaning keeps foreign particles to a minimum and
+              extends the life of your flooring investment.
+            </p>
+            <button class="service-btns">Learn More ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--service end-->
+
+  <!--points-->
+  <section class="point">
+    <div style="text-align: center" class="pointback">
+      <h4 class="clr margins capital">Points</h4>
+      <p class="strength">Our Strength Points</p>
+    </div>
+    <div class="container text-center pointback">
+      <div class="row">
+        <div class="col-lg-7 col-xl-7 col-md-12">
+         <div class="pointimg"> <img src="images/point.png " /></div>
+        </div>
+        <div class="col-lg-5 col-xl-5 col-md-12 ">
+          <div class="points">
+          <p><img src="images/check-mark.png"> MSDS for chemicals</p>
+          <p><img src="images/check-mark.png">Communication book</p>
+          <p><img src="images/check-mark.png">Maily supervision</p>
+          <p><img src="images/check-mark.png">Monthly inspection report</p>
+          <p><img src="images/check-mark.png">Occupational health & safety</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--points end-->
+
+  <!--testimonials-->
+  <section class="testimonial">
+    <div class="container text-left mt-3">
+      <h4 class="clr margins">TESTIMONIALS</h4>
+      <h1>Our Clients</h1>
+    </div>
+
+    <div class="container text-center">
+      <div class="row mt-5">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="shadow-effect ">
+              <div class="quat"><img src="images/testimonial.png" /></div>
+              <h3>Tim Dalton</h3>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+
+              <p>
+                When I receive good service I like to let other people know. Shout
+                out to Jerry and Huss. We had a water leak and Capital facility
+                services provided a damage assessment report and helped us with our
+                insurance company to fix the problem. Thanks for your great work,
+                guidance and making the process easy.
+              </p>
+            </div>
+
+          </div>
+          <div class="item">
+
+
+
+            <div class="shadow-effect">
+              <div class="quat"><img src="images/testimonial.png" /></div>
+              <h3>Tim Dalton</h3>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+
+              <p>
+                When I receive good service I like to let other people know. Shout
+                out to Jerry and Huss. We had a water leak and Capital facility
+                services provided a damage assessment report and helped us with our
+                insurance company to fix the problem. Thanks for your great work,
+                guidance and making the process easy.
+              </p>
+            </div>
+
+          </div>
+          <div class="item">
+
+
+
+            <div class="shadow-effect">
+              <div class="quat"><img src="images/testimonial.png" /></div>
+              <h3>Tim Dalton</h3>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+
+              <p>
+                When I receive good service I like to let other people know. Shout
+                out to Jerry and Huss. We had a water leak and Capital facility
+                services provided a damage assessment report and helped us with our
+                insurance company to fix the problem. Thanks for your great work,
+                guidance and making the process easy.
+              </p>
+            </div>
+
+          </div>
+          <div class="item">
+
+
+
+            <div class="shadow-effect">
+              <div class="quat"><img src="images/testimonial.png" /></div>
+              <h3>Tim Dalton</h3>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+
+              <p>
+                When I receive good service I like to let other people know. Shout
+                out to Jerry and Huss. We had a water leak and Capital facility
+                services provided a damage assessment report and helped us with our
+                insurance company to fix the problem. Thanks for your great work,
+                guidance and making the process easy.
+              </p>
+            </div>
+
+          </div>
+          <div class="item">
+
+
+
+            <div class="shadow-effect">
+              <div class="quat"><img src="images/testimonial.png" /></div>
+              <h3>Tim Dalton</h3>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+
+              <p>
+                When I receive good service I like to let other people know. Shout
+                out to Jerry and Huss. We had a water leak and Capital facility
+                services provided a damage assessment report and helped us with our
+                insurance company to fix the problem. Thanks for your great work,
+                guidance and making the process easy.
+              </p>
+            </div>
+
+          </div>
+          <div class="item">
+
+
+
+            <div class="shadow-effect">
+              <div class="quat"><img src="images/testimonial.png" /></div>
+              <h3>Tim Dalton</h3>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+              <i class="fa-solid fa-star clr"></i>
+
+              <p>
+                When I receive good service I like to let other people know. Shout
+                out to Jerry and Huss. We had a water leak and Capital facility
+                services provided a damage assessment report and helped us with our
+                insurance company to fix the problem. Thanks for your great work,
+                guidance and making the process easy.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <!--end testimonials-->
+
+
+
+  <!--contact us-->
+
+  <section class="contact margins" id="contactus">
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-5  col-xl-5 col-sm-12 ">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112178.64480204455!2d77.40182545!3d28.5222018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1702201051352!5m2!1sen!2sin"
+            width="100%" height="400" style="border: 0; border-radius: 10px" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-7   col-xl-7 col-sm-12">
+        <div class="contact-section">
+<!-- 
+          <form action="#" method="post">
+            <div class="form-group">
+
+
+              <div class="row">
+                 
+                <div class="col-md-6"> <input type="text" id="fname" placeholder="Enter First Name" name="fname" required class="form-control"/></div>
+                 <div class="col-md-6"><input type="text" id="lname" placeholder="Enter Last Name" name="lname" required class="form-control"/></div>
+                </div>
+
+            <div class="row">
+              <div class="col-md-6"> <input type="email" id="email" placeholder=" Enter Email Id" name="email" required class="form-control" /></div>
+              <div class="col-md-6"><input type="text" id="number" placeholder="Enter Number" name="number" required class="form-control"/></div>
+            </div>
+          </div>
+             
+            <div class="row">
+              <div class="col-md-12">
+                <textarea id="message" placeholder="Enter Message" name="message" required></textarea>
+              </div></div>
+           
+            <button type="submit">Submit</button>
+          </form> -->
+          <form>
+            <div class="row g-3 ">
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        <label for="name">Enter First Name</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        <label for="email">Enter Last Name</label>
+                    </div>
+                </div>
+              </div>
+                <div class="row g-3">
+                  <div class="col-md-6  gy-4">
+                      <div class="form-floating">
+                          <input type="text" class="form-control" id="name" placeholder="Your Name">
+                          <label for="name">Enter Email ID</label>
+                      </div>
+                  </div>
+                  <div class="col-md-6 gy-4">
+                      <div class="form-floating">
+                          <input type="email" class="form-control" id="email" placeholder="Your Email">
+                          <label for="email">Enter Number</label>
+                      </div>
+                  </div>
+                
+                
+                </div>
+                <div class="row g-3">
+                <div class="col-12 gy-4">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                        <label for="message"> Enter Message</label>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class=" w-50 py-3 submit_btn" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+  <!--contact end-->
+
+  <!--footer-->
+  <section class=" footer text-left ">
+    <div class="row">
+      <div class="up"><a href="index.html"><img src="images/up.png"></a></div>
+      <div class="col-lg-3 col-md-3 col-xl-3">
+        <img src="images/logo.svg" class="logo" />
+        <p>
+          End of lease/ pre- sale cleaning Fitness & leisure centers cleaning
+          Medical/Health centers cleaning Office & commercial cleaning Steam
+          carpet cleaning Strata cleaning & Gardening
+        </p>
+        <div class="social">
+        <a href=""><img src="images/fb.png" /></a>
+        <a href=""><img src="images/yt.png" /></a>
+        <a href=""><img src="images/insta.png" /></a>
+        <a href=""><img src="images/linkedin.png" /></a>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xl-3">
+        <div class="footsame">
+        <h3>COMPANY</h3>
+        <a href="">Home</a>
+        <a href="">Contact Us</a>
+        <a href="">Blog</a>
+         <a href="">Gallary</a>
+        <a href="">About Us</a>
+      </div></div>
+      <div class="col-lg-3 col-md-3 col-xl-3">
+        <div class="footsame">
+        <h3>SERVICES</h3>
+        <a href="">End of lease/ pre- sale cleaning</a>
+        <a href="">Office & commercial cleaning</a>
+        <a href=""> Medical/Health centers cleaning</a>
+        <a href=""> Fitness & leisure centers cleaning</a>
+        <a href="">Strata cleaning & Gardening</a>
+      </div></div>
+      <div class="col-lg-3 col-md-3 col-xl-3 contact-footerflex">
+        <h3>CONTACT US</h3>
+        <div class="footcont">
+        <a href=""><img src="images/email.png" />
+          <p>info@cleanqo.com.au</p>
+        </a>
+        <a href=""><img src="images/phone.png" />
+          <p>0402574596</p>
+        </a>
+        <a href=""><img src="images/global.png" />
+          <p>www.cleanqo.com.au</p>
+        </a>
+      </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container text-left">
+      <div class="row">
+        <div class="col-lg-8">
+          <p>Designed by Webpristine Technologies (INDIA)</p>
+        </div>
+        <div class="col-lg-4">
+          <p>TERMS & CONDITIONS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  <section class="new">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sit sequi ducimus odio incidunt similique! Maxime corrupti laborum ab ipsum placeat quisquam sit quidem eius cum, ratione dolores deserunt minima dolorem temporibus delectus aliquid nulla necessitatibus, vel animi veniam ea vero nostrum. Ratione adipisci nesciunt, natus doloribus, maxime tenetur voluptates nihil mollitia est placeat commodi perspiciatis odio fuga tempora error reiciendis. Soluta inventore exercitationem maxime nam ipsa nostrum aut nemo, at eum, harum est? Iure maiores non ut nostrum aut. Molestiae labore sed accusamus a, exercitationem reiciendis, velit maxime ullam est maiores mollitia itaque quasi dolor asperiores sit saepe voluptas?</p>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sit sequi ducimus odio incidunt similique! Maxime corrupti laborum ab ipsum placeat quisquam sit quidem eius cum, ratione dolores deserunt minima dolorem temporibus delectus aliquid nulla necessitatibus, vel animi veniam ea vero nostrum. Ratione adipisci nesciunt, natus doloribus, maxime tenetur voluptates nihil mollitia est placeat commodi perspiciatis odio fuga tempora error reiciendis. Soluta inventore exercitationem maxime nam ipsa nostrum aut nemo, at eum, harum est? Iure maiores non ut nostrum aut. Molestiae labore sed accusamus a, exercitationem reiciendis, velit maxime ullam est maiores mollitia itaque quasi dolor asperiores sit saepe voluptas?</p>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script src="index.js"></script>
+</body>
+
+</html>
