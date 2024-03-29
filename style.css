@@ -483,11 +483,6 @@ a {
   background-color: #FB383C;
   cursor: pointer;
 }
-.offcanvas-title img{
-  width: 200px ; 
-  height: 200px ;
-  padding-top: 40px;
-}
 
 .modal-backdrop.show {
   opacity: 0 !important;
@@ -495,4 +490,19 @@ a {
 
 html,body{
  overflow-x: hidden !important;
+}
+
+.accordion-button .acordbtn::after {
+ content: "" !important;
+}
+
+/* .accordion-button::after {
+  content: none;
+} */
+.offcanvas{
+  z-index: 9999 !important;
+
+}
+.accordion-button:not(.collapsed)::after{
+  background: none;
 }
